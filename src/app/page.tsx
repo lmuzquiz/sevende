@@ -36,11 +36,11 @@ export default function Home() {
             </tr>
             <tr className="odd:bg-white even:bg-neutral-50">
               <th className="p-4 font-medium text-neutral-600">Ubicación</th>
-              <td className="p-4 text-neutral-900">Fuentes del Valle</td>
+              <td className="p-4 text-neutral-900">San Pedro Garza García</td>
             </tr>
             <tr className="odd:bg-white even:bg-neutral-50">
               <th className="p-4 font-medium text-neutral-600">Envío sin costo</th>
-              <td className="p-4 text-neutral-900">Solamente Dentro de San Pedro Garza García</td>
+              <td className="p-4 text-neutral-900">Solamente Dentro del municipio</td>
             </tr>
             <tr className="odd:bg-white even:bg-neutral-50">
               <th className="p-4 font-medium text-neutral-600">Informes</th>
@@ -51,8 +51,8 @@ export default function Home() {
       </div>
 
       <div className="w-full max-w-5xl grid grid-cols-1 gap-6">
-        <Image src={photo2} alt="Foto 4" className="w-full h-auto rounded-md object-contain" placeholder="blur" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 800px, 1024px" />
-        <Image src={photo1} alt="Foto 2" className="w-full h-auto rounded-md object-contain" placeholder="blur" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 800px, 1024px" />
+        <Image src={photo2} alt="Foto 4" className="w-full h-auto rounded-md object-contain" placeholder="blur" loading="lazy" decoding="async" quality={85} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 800px, 1024px" />
+        <Image src={photo1} alt="Foto 2" className="w-full h-auto rounded-md object-contain" placeholder="blur" loading="lazy" decoding="async" quality={85} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 800px, 1024px" />
       </div>
     </div>
   );
