@@ -1,9 +1,16 @@
+import Image from "next/image";
+import photo1 from "../../public/1a.jpg";
+import photo2 from "../../public/2a.jpg";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-black flex flex-col items-center justify-start p-6 sm:p-10">
-      <img
+      <Image
         src="/logo-just-art-color.svg"
         alt="Just Art - Logo"
+        width={448}
+        height={120}
+        priority
         className="mt-6 sm:mt-8 mb-4 sm:mb-6 w-64 sm:w-80 md:w-[28rem] h-auto mx-auto"
       />
       <h1 className="text-4xl sm:text-6xl font-bold tracking-tight mt-2 mb-6">Se Vende</h1>
@@ -44,8 +51,8 @@ export default function Home() {
       </div>
 
       <div className="w-full max-w-5xl grid grid-cols-1 gap-6">
-        <img src="/2a.jpg" alt="Foto 4" className="w-full h-auto rounded-md object-contain" />
-        <img src="/1a.jpg" alt="Foto 2" className="w-full h-auto rounded-md object-contain" />
+        <Image src={photo2} alt="Foto 4" className="w-full h-auto rounded-md object-contain" placeholder="blur" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 800px, 1024px" />
+        <Image src={photo1} alt="Foto 2" className="w-full h-auto rounded-md object-contain" placeholder="blur" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 800px, 1024px" />
       </div>
     </div>
   );
