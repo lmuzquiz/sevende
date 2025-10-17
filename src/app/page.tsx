@@ -8,10 +8,11 @@ export default function Home() {
       <Image
         src="/logo-just-art-color.svg"
         alt="Just Art - Logo"
-        width={448}
-        height={120}
+        width={1280}
+        height={342}
         priority
-        className="mt-6 sm:mt-8 mb-4 sm:mb-6 w-64 sm:w-80 md:w-[28rem] h-auto mx-auto"
+        sizes="(max-width: 640px) 40rem, (max-width: 768px) 48rem, 72rem"
+        className="mt-6 sm:mt-8 mb-4 sm:mb-6 w-[40rem] sm:w-[48rem] md:w-[72rem] max-w-full h-auto mx-auto"
       />
       <h1 className="text-4xl sm:text-6xl font-bold tracking-tight mt-2 mb-6">Se Vende</h1>
 
